@@ -25,6 +25,17 @@ export function get(req, res, next) {
     return `<pre class='language-javascriptreact'><code>${highlighted}</code></pre>`;
   };
 
+  renderer.paragraph = (text) => {
+    const smileys = [':smile:',':wink:']
+    const images  = ['😊','😉']
+
+    for (var i = 0; i < smileys.length; i++) {
+       text = text.replace(smileys[i], images[i])
+    }
+
+    return '<p>' + text + '</p>';
+  }
+
   // parse the md to get front matter
   // and the content without escaping characters
   const { data, content } = grayMatter(post);

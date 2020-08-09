@@ -138,6 +138,6 @@ But feel free to have a look at: netlify or github pages
 ### Finally deploy the whole thing
 This step turned out to be pretty straightforward. First add a git repository to your github account or any other provider. Then import this repository in a new Vercel project.
 
-One littel issue I had was the build command which you can configure. At the end I chose to `override` the default and use `sapper export`.
+One little issue I had was the build command which you can configure. At the end I chose to `override` the default and use `sapper export`.
 
 That's it for the first post here in this space, yay :smile:
